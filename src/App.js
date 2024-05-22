@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WeatherApp from './weatherApp/WeatherApp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const api = {
+  key: "409f6514aa06f9f298afd768741df7c3",
+  base: "https://home.openweathermap.org/api_keys"
 }
 
-export default App;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Weather App</h1>
+      <h2><WeatherApp /></h2>
+      {/* location */}
+      <p>Manchester, United Kingdom</p>
+      {/* temp */}
+      <p>18°C</p>
+      {/* weather */}
+      <p>Raining</p>
+    </div>
+  )
+}
+export default App
