@@ -15,14 +15,9 @@ const WeatherApp = () => {
         base: "https://home.openweathermap.org/api_keys"
     }
 
-    const searchPressed = () => {
-        fetch(`api.openweathermap.org/data/2.5/forecast?${weather}id=524901&appid=${api.key}`)
-            .then(response => response.json())
-            .then((response) => {
-                setapiResult = response
-            })
+   
 
-    }
+
 
 
     return (
