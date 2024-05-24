@@ -1,15 +1,14 @@
 import React from 'react';
 import WeatherApp from './weatherApp/WeatherApp';
-
+import './weatherApp/WeatherApp.css'
 
 
 
 
 const App = () => {
   return (
-    <div>
-      <h1>Weather App</h1>
-      <h2><WeatherApp /></h2>
+    <div id='app'>
+      <h2><WeatherApp/></h2>
     </div>
   )
 }

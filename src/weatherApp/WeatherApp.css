@@ -1,4 +1,42 @@
-body{
+body {
+    margin: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(images/backgroundPic.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black; /* Set border width and color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 20px; /* Add padding inside the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.753); /* Add box shadow for depth effect */
+    background-color: #f9f9f94f; /* Add background color */
+}
+
+
+#container button {
+    border-radius: 5px;
+    background-color:  rgba(0, 0, 0, 0.705);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container input {
+    border-radius: 5px;
+    border-color: rgba(0, 0, 255, 0.473);
+    background-color: #f9f9f94f;
+    text-align: center;
+    margin: 2px;
+    padding: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
